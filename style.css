@@ -7,7 +7,17 @@ body{
     font-family:'Rajdhani', sans-serif;
     font-weight: bold;
     color: #BAC8CB;
-    font-size: 16px;
+    font-size: 15px;
     background-color: #20272F;
-    margin: 3px;
+    margin: 5px;
+    width: 380px;
 }
+h2{
+    color:#F2E5A0;  
+}
+/* FONT size ne marche pas */
+a{
+    color:#BAC8CB;
+    font-size: 25;
+}
+/* Font size ne marche pas */
