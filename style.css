@@ -3,6 +3,18 @@
     padding: 0;
     list-style-type: none;
 }
+.catchphrase{
+    color:#F2E5A0;
+    font-size: 20px;
+    text-align: center;
+}
+.alignLeft{
+    float:left;
+    margin-right: 7px;
+}
+.resume{
+    padding: 7px;
+}
 body{
     font-family:'Rajdhani', sans-serif;
     font-weight: bold;
@@ -13,11 +25,13 @@ body{
     width: 380px;
 }
 h2{
-    color:#F2E5A0;  
+    color:#F2E5A0; 
+    margin-left: 15px;
 }
-/* FONT size ne marche pas */
 a{
     color:#BAC8CB;
-    font-size: 25;
+    font-size: 17px;
 }
-/* Font size ne marche pas */
+.photo{
+    text-align: center;
+}
