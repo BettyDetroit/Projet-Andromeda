@@ -98,7 +98,25 @@ strong{
     margin-top: 10px;
     text-align: center;
 }
-.illustration{
+#illustration1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+#illustration2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+#illustration3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+#illustration4{
     display: block;
     margin-left: auto;
     margin-right: auto;
