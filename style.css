@@ -6,10 +6,68 @@
 }
 /*  Fin reset */
 
-#logo{
+/* 1 REM = 10px */
+HTML{
+    font-size: 62.5%;
+}
+/* Fin de REM */
+
+/* MENU BURGER  MARGIN negatif à retravailler */
+.burger{
+    width: 3.8rem;
+    height: 2rem;
+    cursor: pointer;
+    position: sticky;
+    top: 1%;
+    left: 83%;
+    margin-top: -11%;
+    margin-bottom: 7%;
+}
+
+.burger span{
+    width: 100%;
+    height: 0.25rem;
+    background-color: whitesmoke; 
+    display: block;
     position: absolute;
-    left:10px;
-    top:10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.5s ease-in-out;
+}
+
+.burger span::before, .burger span::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.25rem;
+    background-color: whitesmoke;
+    transition: transform 0.5s ease-in-out;
+}
+
+.burger span::before{
+    transform: translateY(-1rem);
+}
+
+.burger span::after{
+    transform: translateY(1rem);
+}
+.burger.active span {
+    background-color: transparent;
+} 
+
+.burger.active span::before{
+    transform: translateY(0px) rotateZ(45deg);
+}
+
+.burger.active span::after{
+    transform: translate(0px) rotateZ(-45deg);
+}
+
+/* Fin du menu burger */
+
+/* Les IMAGES */
+header img{
+    width: 100%;
 }
 
 img:hover {
@@ -19,6 +77,18 @@ img:hover {
 img{
     border-radius: 10px;
 }
+
+.alignLeft{
+    float:left;
+    margin-right: 7px;
+    width: 19%;
+    min-width: 10rem;
+}
+#photosResume img {
+    width:25%;
+    min-width: 8.5rem;
+}
+/* Fin des Images */
 
 /* Animation H1 Brightness */
 h1{
@@ -89,25 +159,24 @@ filter:brightness(30%)
 }
 /* FIN animation Brightness */
 
-.alignLeft{
-    float:left;
-    margin-right: 7px;
-}
+
 .resume{
     padding: 7px;
+    border: 2px solid salmon;
+
 }
 body{
-    font-family:'Rajdhani', sans-serif;
+    font-family:'Rajdhani', sans-serif; 
     font-weight: bold;
     color: #BAC8CB;
-    font-size: 15px;
-    background-color: #0A1622;
-    margin: 5px;
-    width: 365px;
+    font-size: 1.5rem;
+    background-color: #142535;
+    margin: 0.5rem;
+    width: 100%;
 }
 h2{
     color:#F7B99C;
-    margin-left: 15px;
+    margin-left: 1.5rem;
     font-size: 18px;
 }
 #histoire {
@@ -171,7 +240,7 @@ strong{
 footer{
     display: flex;
     justify-content: space-around;
-    font-size: 10px;
+    font-size: 1.2rem;
     background-color: #0f1215;
     margin-top: 5px;
     border-radius: 10px;
@@ -184,12 +253,27 @@ footer{
     justify-content: center;
 }
 #lien-contact{
-    font-size: 8px;
+    font-size: 1rem;
 }
 #liens, #contact{
     margin-top: 5px;
+    margin-bottom: 5px;
 }
 li a{
     font-size: 8px;
 }
 
+/* responsive design en action */
+
+@media screen and (min-width: 800px) {
+#partieResumes{
+    width: 100%;
+    display:flex;
+    border: 2px, solid rgb(201, 239, 10);
+}
+#photosResume{
+    display: flex;
+    justify-content: space-between;
+}
+
+}

@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/initiative.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
-    <title>Projet Mass Effect</title>
+    <title>Projet Andromeda</title>
 </head>
 <body>
-    <script src="script.js"></script>
+    
 <!-- Header et barre de navigation. -->
     <Header>
-    <img src="images/game-poster.jpg" width="365px" alt="image n7 et galaxie"/>
+        
+    <img src="images/game-poster.jpg" alt="image n7 et galaxie"/>
 
         <!-- <nav>
             <ul>
@@ -25,21 +26,26 @@
                 <li><a href="#illustration4">Critique</a></li>
             </ul>
         </nav> -->
+        
     </Header>
 <!-- FIN Header et barre de navigation. -->
+<div class="burger">
+    <span></span>
+</div>
 
-<!-- SECTION résumés avec liens vers les articles correspondants.-->
 <main>
+<!--  Titre h1 avec animation Brightness -->
 
     <h1><span class="anim1">Un</span> <span class="anim2">voyage</span> <span class="anim3">vers</span>
         <span class="anim4"> l'inconnu,</span> <span class="anim5">vers la</span> 
         <span class="anim6">galaxie</span> <span class="anim7">d'An</span><span class="anim8">dromede.</span></h1>
 
-    <section>
 
+<!-- SECTION résumés avec liens vers les articles correspondants.-->
+    <section id="partieResumes">
 <!-- RESUME 1 HISTOIRE --> 
         <article class="resume">
-        <img class="alignLeft" src="images/histoire/andromeda-initiative.jpg" width="100px" alt="Logo de l'initiative." Title="L'herbe est-elle plus verte ailleurs?"/>
+        <img class="alignLeft" src="images/histoire/andromeda-initiative.jpg" alt="Logo de l'initiative." Title="L'herbe est-elle plus verte ailleurs?"/>
             <div class="paragraphe">
             <h2>L'histoire</h2>
             <p>L'histoire raconte le périple de colons (4 arches d'environ 20000 personnes) partis de notre 
@@ -51,7 +57,7 @@
 
 <!-- RESUME 2 UNIVERS  -->
         <article class="resume">
-        <img class="alignLeft" src="images/univers/univers3.jpg" width="100px" alt="la galaxie d'Andromeda." Title="La galaxie d'Andromeda"/>
+        <img class="alignLeft" src="images/univers/univers3.jpg" alt="la galaxie d'Andromeda." Title="La galaxie d'Andromeda"/>
             <div class="paragraphe">
             <h2>L'Univers</h2>
             <p class="paragraphe">Les voyageurs extragalactiques de la Voie lactée, réunis sous l'égide de l'Initiative
@@ -63,7 +69,7 @@
 
 <!-- RESUME 3 PERSONNAGES -->
         <article class="resume">
-        <img class="alignLeft" src="images/personnages/personnages.jpg" width="100px" alt="les membres de l'équipage de Scott Ryder." Title="Tes Squadmates"/>
+        <img class="alignLeft" src="images/personnages/personnages.jpg" alt="les membres de l'équipage de Scott Ryder." Title="Tes Squadmates"/>
             <div class="paragraphe">
             <h2>Les personnages</h2>
             <p class="paragraphe">A la manière des 3 opus précédents, Andromeda fonctionne sur un principe de rencontre et de recrutement
@@ -75,7 +81,7 @@
         
 <!-- RESUME 4 CRITIQUE -->
         <article class="resume">
-        <img class="alignLeft" src="images/critique/andromeda-header.jpg" width="100px" alt="Soldat de l'espace N7" Title="Ryder est prêt à tout entendre"/>
+        <img class="alignLeft" src="images/critique/andromeda-header.jpg" alt="Soldat de l'espace N7" Title="Ryder est prêt à tout entendre"/>
             <div class="paragraphe">
             <h2>Critique</h2>
             <p class="paragraphe"> J'ai joué à Mass Effect Andormeda lors de sa sortie. Je n'avais jamais joué à la trilogie Shepard avant 
@@ -90,15 +96,15 @@
 <!-- FIN SECTION des résumés avec lien-->
 
 <!-- SECTION des PHOTOS separation 1-->
-<section class="photo">
+<section id="photosResume" class="photo">
 <a href="images/separation1/separation1.jpg">
-<img src="images/separation1/separation1.jpg" width="85px" alt="photo soldat galactique en plein combat sur Eos." Title="Eos"/></a>
+<img src="images/separation1/separation1.jpg" alt="photo soldat galactique en plein combat sur Eos." Title="Eos"/></a>
 <a href="images/separation1/separation2.jpeg">
-<img src="images/separation1/separation2.jpeg" width="85px" alt="photo pionnier qui interragit avec un objet extraterrestre." Title="Le pionnier en action"/></a>
+<img src="images/separation1/separation2.jpeg" alt="photo pionnier qui interragit avec un objet extraterrestre." Title="Le pionnier en action"/></a>
 <a href="images/separation1/separation3.jpg">
-<img src="images/separation1/separation3.jpg" width="85px" alt="soldat galactique qui observe un paysage extraterrestre sur Habitat 7." Title="Habitat 7"/></a>
+<img src="images/separation1/separation3.jpg" alt="soldat galactique qui observe un paysage extraterrestre sur Habitat 7." Title="Habitat 7"/></a>
 <a href="images/separation1/separation4.jpg">
-<img src="images/separation1/separation4.jpg" width="85px" alt="photo du personnage Phoebe une asari." Title="Phoebe"/></a>
+<img src="images/separation1/separation4.jpg" alt="photo du personnage Phoebe une asari." Title="Phoebe"/></a>
 </section>
 <!-- FIN section photos -->
 
@@ -280,9 +286,6 @@
         <p>Liens utiles:</p>
             <ul>
                 <li>
-                    <a href="https://www.ea.com/fr-fr/games/mass-effect/mass-effect-andromeda">Le site officiel du jeu</a>
-                </li>
-                <li>
                     <a href="https://masseffectuniverse.fr/">Mass Effect Universe</a>
                 </li>
                 <li> 
@@ -297,6 +300,7 @@
     </footer>
 </main>
 
-    
+<script src="script.js"></script>    
+
 </body>
 </html>
