@@ -12,16 +12,15 @@ HTML{
 }
 /* Fin de REM */
 
-/* MENU BURGER  MARGIN negatif à retravailler */
+/* MENU BURGER  */
 .burger{
-    width: 3.8rem;
-    height: 2rem;
+    width: 4%;
+    height: 0.15%;
     cursor: pointer;
     position: sticky;
-    top: 1%;
-    left: 83%;
-    margin-top: -11%;
-    margin-bottom: 7%;
+    top: 3rem;
+    left: 90%;
+    z-index: 2;
 }
 
 .burger span{
@@ -64,27 +63,51 @@ HTML{
 }
 
 /* Fin du menu burger */
+/*  NAVBAR BURGER */
+.navbar-mobile{
+    background-color: #050d13; 
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    height: 45rem;
+    width: 95%;
+    justify-content: space-around;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.navbar-mobile a{
+    color:#F2E5A0;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.modal.active{
+    display: none;
+}
+/* FIN NAVBAR burger */
 
 /* Les IMAGES */
 header img{
     width: 100%;
 }
 
-img:hover {
+.photo img:hover{
     transform: scale(1.3);
 }
 
 img{
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 
 .alignLeft{
     float:left;
-    margin-right: 7px;
+    margin-right: 0.7rem;
     width: 19%;
     min-width: 10rem;
 }
-#photosResume img {
+.photo img {
     width:25%;
     min-width: 8.5rem;
 }
@@ -93,9 +116,9 @@ img{
 /* Animation H1 Brightness */
 h1{
     color:#F2E5A0;
-    font-size: 21px;
+    font-size: 131%;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 .anim1{
     animation-name: brightness;
@@ -159,25 +182,37 @@ filter:brightness(30%)
 }
 /* FIN animation Brightness */
 
-
+/* ADAPTATION ANIMATION aux écrans plus grands */
+@media screen and (min-width: 440px){
+    .anim7{
+        animation-name: brightness;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-delay: 1540ms;
+    }
+    .anim8{
+        animation-name: brightness;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-delay: 1610ms;
+    }
+}
+/* Fin adaptation animation aux écrans plus grands */
 .resume{
-    padding: 7px;
-    border: 2px solid salmon;
-
+    padding: 0.7rem;
 }
 body{
     font-family:'Rajdhani', sans-serif; 
     font-weight: bold;
     color: #BAC8CB;
     font-size: 1.5rem;
-    background-color: #142535;
+    background-color: #142535; 
     margin: 0.5rem;
-    width: 100%;
 }
 h2{
     color:#F7B99C;
     margin-left: 1.5rem;
-    font-size: 18px;
+   
 }
 #histoire {
     text-align: center;
@@ -193,14 +228,14 @@ h2{
 }
 a{
     color:#BAC8CB;
-    font-size: 17px;
+    
 }
 strong{
-    font-size: 17px;
+    font-size: 1.7rem;
 }
 .photo{
     border-radius: 15%;
-    margin-top: 10px;
+    margin-top: 1rem;
     text-align: center;
 }
 
@@ -208,32 +243,31 @@ strong{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15px;
+    
 }
 #illustration2{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15px;
+ 
 }
 #illustration3{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15px;
+   
 }
 #illustration4{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15px;
 }
 .perso{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 8px;
-    margin-bottom: 20px;
+    margin-top: 0.8rem;
+    margin-bottom: 2rem;
 }
 
 /* FOOTER */
@@ -242,12 +276,12 @@ footer{
     justify-content: space-around;
     font-size: 1.2rem;
     background-color: #0f1215;
-    margin-top: 5px;
-    border-radius: 10px;
+    margin-top: 0.5rem;
+    border-radius: 1rem;
 }
 
 #logo-footer{
-    width: 100px;
+    width: 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -256,24 +290,121 @@ footer{
     font-size: 1rem;
 }
 #liens, #contact{
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 li a{
-    font-size: 8px;
+    font-size: 0.8rem;
 }
 
-/* responsive design en action */
+/* responsive design DESKTOP */
 
 @media screen and (min-width: 800px) {
-#partieResumes{
-    width: 100%;
-    display:flex;
-    border: 2px, solid rgb(201, 239, 10);
+
+body{
+font-size: 130%;
+margin-left: 2%;
+margin-right: 2%;
 }
-#photosResume{
-    display: flex;
-    justify-content: space-between;
+#partieResumes{
+width: 100%;
+display:flex;
 }
 
+.resume{
+width: 34%;
 }
+
+.alignLeft{
+float:none;
+width: 100%;
+height: 34%;
+}
+h1{
+font-size: 190%;
+}
+
+#photosResume img{
+    width:15%;
+    min-width: 8.5rem;
+}
+
+.photo img {
+    width:15%;
+    min-width: 8.5rem;
+    margin-bottom: 2rem;
+}
+/* Article Histoire organisé en GRID */
+#article-histoire{
+display: grid;
+grid-template-columns: 75% 25%;
+grid-template-rows: 28% 5% 65%;
+margin-bottom: 4rem;
+}
+#illustration1, #histoire{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#illustration1{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#histoire{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#paragraphe-histoire{
+grid-row-start: 3;
+grid-row-end: 4;
+}
+#article-histoire .photo { 
+    display: flex;
+    flex-direction: column;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    }
+   #histoire1, #histoire2, #histoire3{
+    width: 12em;
+   }
+/* Fin mise en page article histoire */
+/* Article Critique organisé en GRID */
+#article-critique{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 30% 5% 65%;
+    margin-bottom: 4rem;
+    }
+    #illustration4, #critique{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    #illustration4{
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #critique{
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    #paragraphe-critique{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-bottom: 4em;
+    }
+    #article-critique .photo { 
+    display: flex;
+    flex-direction: column;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    }
+    #critique1, #critique2, #critique3{
+    width: 12em;
+    }
+    /* Fin mise en page article critique */
+}
+
+
