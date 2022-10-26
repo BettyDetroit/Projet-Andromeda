@@ -12,6 +12,20 @@ HTML{
 }
 /* Fin de REM */
 
+/* VARIABLES */
+:root{
+    --background-color: #0f1d29;
+    --font-color:  #BAC8CB;
+    --font-family:'Rajdhani', sans-serif;
+    --font-size:1rem;
+    --h2-color:#F7B99C;
+    --spacing1:0.5rem;
+    --footer-background-color: #0f1215;
+    --burger-background-color:#050d13;
+    --burger-font-color:#F2E5A0;
+}
+/* FIN VARIABLES */
+
 /* MENU BURGER  */
 .burger{
     width: 4%;
@@ -26,7 +40,7 @@ HTML{
 .burger span{
     width: 125%;
     height: 0.25rem;
-    background-color: #F2E5A0; 
+    background-color: var(--burger-font-color); 
     display: block;
     position: absolute;
     top: 50%;
@@ -39,7 +53,7 @@ HTML{
     position: absolute;
     width: 100%;
     height: 0.25rem;
-    background-color: #F2E5A0;
+    background-color:var(--burger-font-color);
     transition: transform 0.5s ease-in-out;
 }
 
@@ -65,22 +79,22 @@ HTML{
 /* Fin du menu burger */
 /*  NAVBAR BURGER */
 .navbar-mobile{
-    background-color: #050d13; 
+    background-color: var(--burger-background-color); 
     display: flex;
     position: absolute;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: calc(var(--spacing1)*4);
     height: 40rem;
     width:530%;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: var(--spacing1);
+    padding-right: var(--spacing1);
     justify-content: space-around;
     opacity: 0.9;
     z-index: 1;
 }
 
 .navbar-mobile a{
-    color:#F2E5A0;
+    color:var(--burger-font-color);
     font-size: 76%;
     text-decoration: none;
     border-bottom: 2px solid;
@@ -118,14 +132,16 @@ img{
     width:25%;
     min-width: 8.5rem;
 }
+
 /* Fin des Images */
 
 /* Animation H1 Brightness */
 h1{
-    color:#F2E5A0;
+    color:var(--burger-font-color);
     font-size: 131%;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom:calc(var(--spacing1)*2);
+    margin-top: 0.7rem;
 }
 .anim1{
     animation-name: brightness;
@@ -207,7 +223,7 @@ filter:brightness(30%)
 /* ADAPTATION menu burger */
 
 .navbar-mobile a {
-    color: #F2E5A0;
+    color:var(--burger-font-color);
     font-size: 97%;
     text-decoration: none;
     border-bottom: 2px solid;
@@ -215,19 +231,20 @@ filter:brightness(30%)
 }
 /* Fin adaptation animation aux écrans plus grands */
 .resume{
-    padding: 0.7rem;
+    padding-top: 0.7rem;
+    padding-bottom:0.7rem;
 }
 body{
-    font-family:'Rajdhani', sans-serif; 
+    font-family:var(--font-family); 
     font-weight: bold;
-    color: #BAC8CB;
-    font-size: 1.5rem;
-    background-color: #142535; 
-    margin: 0.5rem;
+    color:var(--font-color);
+    font-size: calc(var(--font-size)*1.5);
+    background-color: var(--background-color); 
+    margin:var(--spacing1);
 }
 h2{
-    color:#F7B99C;
-    margin-left: 1.5rem;
+    color:var(--h2-color);
+    margin-left: calc(var(--spacing1)*3);
    
 }
 #histoire {
@@ -243,15 +260,15 @@ h2{
     text-align: center;
 }
 a{
-    color:#BAC8CB;
+    color:var(--font-color);
     
 }
 strong{
-    font-size: 1.7rem;
+    font-size: calc(var(--font-size)*1.7);
 }
 .photo{
     border-radius: 15%;
-    margin-top: 1rem;
+    margin-top: calc(var(--spacing1)*2);
     text-align: center;
 }
 
@@ -259,18 +276,20 @@ strong{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top:var(--spacing1);
     
 }
 #illustration2{
     display: block;
     margin-left: auto;
     margin-right: auto;
- 
+    margin-top:var(--spacing1);
 }
 #illustration3{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top:var(--spacing1);
    
 }
 #illustration4{
@@ -283,16 +302,16 @@ strong{
     margin-left: auto;
     margin-right: auto;
     margin-top: 0.8rem;
-    margin-bottom: 2rem;
+    margin-bottom: calc(var(--spacing1)*4);
 }
 
 /* FOOTER */
 footer{
     display: flex;
     justify-content: space-around;
-    font-size: 1.2rem;
-    background-color: #0f1215;
-    margin-top: 0.5rem;
+    font-size: calc(var(--font-size)*1.2);
+    background-color: var(--footer-background-color);
+    margin-top: var(--spacing1);
     border-radius: 1rem;
 }
 
@@ -303,14 +322,14 @@ footer{
     justify-content: center;
 }
 #lien-contact{
-    font-size: 1rem;
+    font-size: var(--font-size);
 }
 #liens, #contact{
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: var(--spacing1);
+    margin-bottom: var(--spacing1);
 }
 li a{
-    font-size: 0.8rem;
+    font-size: calc(var(--font-size)*0.8);
 }
 
 /* responsive design DESKTOP */
@@ -318,7 +337,7 @@ li a{
 @media screen and (min-width: 800px) {
 
 .navbar-mobile a {
-color: #F2E5A0;
+color:var(--burger-font-color);
 font-size: 125%;
 text-decoration: none;
 border-bottom: 2px solid;
@@ -342,7 +361,7 @@ width: 34%;
 .alignLeft{
 float:none;
 width: 100%;
-height: 34%;
+height: 40%;
 }
 h1{
 font-size: 190%;
@@ -356,14 +375,14 @@ font-size: 190%;
 .photo img {
     width:15%;
     min-width: 8.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: calc(var(--spacing1)*4);
 }
 /* Article Histoire organisé en GRID */
 #article-histoire{
 display: grid;
 grid-template-columns: 75% 25%;
 grid-template-rows: 28% 5% 65%;
-margin-bottom: 4rem;
+margin-bottom: calc(var(--spacing1)*8);
 }
 #illustration1, #histoire{
     grid-column-start: 1;
@@ -397,8 +416,8 @@ grid-row-end: 4;
 #article-critique{
     display: grid;
     grid-template-columns: 75% 25%;
-    grid-template-rows: 30% 5% 65%;
-    margin-bottom: 4rem;
+    grid-template-rows: 25% 5% 65%;
+    margin-bottom: calc(var(--spacing1)*8);
     }
     #illustration4, #critique{
         grid-column-start: 1;
@@ -415,7 +434,7 @@ grid-row-end: 4;
     #paragraphe-critique{
     grid-row-start: 3;
     grid-row-end: 4;
-    margin-bottom: 4em;
+    margin-bottom: calc(var(--spacing1)*8);
     }
     #article-critique .photo { 
     display: flex;
