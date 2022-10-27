@@ -158,36 +158,42 @@ h1{
 .anim3{
     animation-name: brightness;
     animation-duration: 3s;
+    transition: ease-in-out;
     animation-iteration-count: infinite;
     animation-delay: 680ms;
 }
 .anim4{
     animation-name: brightness;
     animation-duration: 3s;
+    transition: ease-in-out;
     animation-iteration-count: infinite;
     animation-delay: 1080ms;
 }
 .anim5{
     animation-name: brightness;
     animation-duration: 3s;
+    transition: ease-in-out;
     animation-iteration-count: infinite;
     animation-delay: 1230ms;
 }
 .anim6{
     animation-name: brightness;
     animation-duration: 3s;
+    transition: ease-in-out;
     animation-iteration-count: infinite;
     animation-delay: 1340ms;
 }
 .anim7{
     animation-name: brightness;
     animation-duration: 3s;
+    transition: ease-in-out;
     animation-iteration-count: infinite;
     animation-delay: 680ms;
 }
 .anim8{
     animation-name: brightness;
     animation-duration: 3s;
+    transition: ease-in-out;
     animation-iteration-count: infinite;
     animation-delay: 1080ms;
 }
@@ -210,12 +216,14 @@ filter:brightness(30%)
     .anim7{
         animation-name: brightness;
         animation-duration: 3s;
+        transition: ease-in-out;
         animation-iteration-count: infinite;
         animation-delay: 1540ms;
     }
     .anim8{
         animation-name: brightness;
         animation-duration: 3s;
+        transition: ease-in-out;
         animation-iteration-count: infinite;
         animation-delay: 1610ms;
     }
@@ -357,6 +365,7 @@ padding-bottom:var(--spacing1);
 
 .resume{
 width: 34%;
+margin-right:var(--spacing1);
 }
 
 .alignLeft{
