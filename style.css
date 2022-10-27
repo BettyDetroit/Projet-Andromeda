@@ -352,6 +352,7 @@ margin-right: 2%;
 #partieResumes{
 width: 100%;
 display:flex;
+padding-bottom:var(--spacing1);
 }
 
 .resume{

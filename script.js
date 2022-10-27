@@ -11,70 +11,41 @@ burger.addEventListener('click', () => {
 let nomViewer = document.querySelector('.insertName');
 console.log(nomViewer);
 
+
 //////////////////////////////////////////////////////////////////
 // Au lancement du site, fonction qui vérifie si l'utilisateur à un pseudo 
 // S'il y a déjà un pseudo dans le sessionStorage, rien ne ce passe 
 // Sinon affichage du prompt et stockage du résultat dans le sessionStorage 
 
-// function myPrompt() {
-//     console.log(sessionStorage.getItem("userName"))
-//     if(sessionStorage.getItem("userName") !== false) {
-//         console.log(sessionStorage, 'storage')
-//         sessionStorage.clear()
-//         return
-//     }
-//     else {
-//          let userName = prompt("Salutations Pionnier(e), quel est ton prénom?");
-//          sessionStorage.setItem("userName", userName)
+window.addEventListener('load', function myPrompt() {
+    console.log(sessionStorage.length)
+    if(sessionStorage.length >= 2) {
+        console.log(sessionStorage, 'storage')
+        return
+    }
+    else {
+         let userName = prompt("Salutations Pionnier(e), quel est ton nom?");
+         sessionStorage.setItem("userName", userName)
 
-//         console.log('else')
-//     }};
-/////////////////////////////////////////////////////////////////
+        console.log('else')
+        window.location.reload()
+    }});
 
+let nomStocked = sessionStorage.getItem("userName");
+console.log(nomStocked, "nom stocké");
 
-// myPrompt()
-// console.log(sessionStorage, 'global')
+function ajoutNom(){
+    if(nomStocked != "null") {
+    nomViewer.innerText = `${nomStocked}`;
+    nomViewer.style.color ="white";
+    nomViewer.style.fontSize = "1.2em";
+    return nomStocked;
+    }else{
+        console.log("else stored");
+        nomViewer.innerText = `${""}`;
+    }};
 
-
-
-// function askName(userName) {
-// sessionStorage.setItem("userName", userName);
-// }
-
-
-// ///////////////////////////////////////////////////////////////
-  // let userName = prompt("Salutations Pionnier(e), quel est ton prénom?");
-    // if(userName != undefined) {
-    // nomViewer.innerText = `${userName}`;
-    // return userName;
-    // }else{
-    //     console.log("else");
-    // nomViewer.innerText = `${""}`;
-    // }
-
-// let userName = prompt("Name?")
-// sessionStorage.setItem("userName", userName);
-// console.log(sessionStorage, "coucou");
-
-
-// function askName() {
-//     let username = sessionStorage.getItem('username');
-
-//     if (username === null) {
-//         username = prompt("Salut Pionnier(e");
-//     }
-
-//     if (username != null) {
-//         document.getElementById("userpara").innerHTML = "Hello, " + username;
-//         sessionStorage.setItem('username', username);
-//     } else {
-//         document.getElementById("noUser").innerHTML = "Welcome, Stranger!";
-//     }
-// }
-// ////////////////////////////////////////////////////////////
-
-
-
+  ajoutNom()
 
 
 
