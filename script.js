@@ -19,7 +19,7 @@ console.log(nomViewer);
 
 window.addEventListener('load', function myPrompt() {
     console.log(sessionStorage.length)
-    if(sessionStorage.length >= 2) {
+    if(sessionStorage.getItem("userName")) {
         console.log(sessionStorage, 'storage')
         return
     }
